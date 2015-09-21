@@ -1,0 +1,55 @@
+$color = #333
+
+p-el($el, $el-width = null, $el-height = null)
+  if($el == 'before' || $el == 'after')
+    &
+      position: relative unless @position
+    &::{$el}
+      content: ''
+      display: block
+      if($el-width)
+        width: $el-width
+      if($el-height)
+        height: $el-height
+      {block}
+  else
+    error($el + 'is not a valid pseudo-element.')
+
+-pos(type, args)
+  i = 0
+  position: unquote(type)
+  for j in (1..4)
+    if length(args) > i
+      {args[i]}: (args[i + 1] is a 'unit' || args[i + 1] == 'auto') ? args[i += 1] : 0
+    i += 1
+
+absolute()
+  -pos('absolute', arguments)
+  z-index: 1 unless @z-index
+
+relative()
+  -pos('relative', arguments)
+
+.container
+  width: 500px
+  height: 500px
+
+.ico
+  width: 50px
+  height: @width
+  color: $color
+
+.ico_eye
+  +p-el(before, 60%, 60%)
+    absolute(left 20% top 20%)
+    background: $color
+    border-top-right-radius: 80%
+    border-bottom-left-radius: @border-top-right-radius
+    transform: rotate(-45deg)
+  +p-el(after, 20%, 20%)
+    absolute(left 35% top 35%)
+    border: 4px solid #fff
+    border-radius: 100%
+    margin-left: -2px
+    margin-top: -2px
+
