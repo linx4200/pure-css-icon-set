@@ -1,12 +1,13 @@
-$size = 50px
+$size = 50px  // 容器的宽高
 
 lightening-triangle()
   triangle: 0.3 * $size 0.6 * $size, $color, up
 
 .ico_lightening
   +p-el(before)
-    absolute: left 50% top 0
+    absolute: left 50% top 50%
     margin-left: - (0.15 * $size)
+    margin-top: - (0.5 * $size)
     lightening-triangle()
     transform: rotate(25deg)
   +p-el(after)
