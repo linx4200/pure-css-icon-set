@@ -1,3 +1,17 @@
+$size = 50px
+
+lightening-triangle()
+  triangle: 0.3 * $size 0.6 * $size, $color, up
+
 .ico_lightening
-  +p-el(before, 10%, 100%)
-    border-bottom:
+  +p-el(before)
+    absolute: left 50% top 0
+    margin-left: - (0.15 * $size)
+    lightening-triangle()
+    transform: rotate(25deg)
+  +p-el(after)
+    absolute: left 50% top 50%
+    margin-left: - (0.2 * $size)
+    margin-top: - (0.1 * $size)
+    lightening-triangle()
+    transform: rotate(-145deg)
