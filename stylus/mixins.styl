@@ -1,5 +1,3 @@
-$color = #333
-
 p-el($el, $el-width = null, $el-height = null)
   if($el == 'before' || $el == 'after')
     &
@@ -29,27 +27,3 @@ absolute()
 
 relative()
   -pos('relative', arguments)
-
-.container
-  width: 500px
-  height: 500px
-
-.ico
-  width: 50px
-  height: @width
-  color: $color
-
-.ico_eye
-  +p-el(before, 60%, 60%)
-    absolute(left 20% top 20%)
-    background: $color
-    border-top-right-radius: 80%
-    border-bottom-left-radius: @border-top-right-radius
-    transform: rotate(-45deg)
-  +p-el(after, 20%, 20%)
-    absolute(left 35% top 35%)
-    border: 4px solid #fff
-    border-radius: 100%
-    margin-left: -2px
-    margin-top: -2px
-
