@@ -78,13 +78,13 @@
 .ico_pencil::after {
   content: '';
   display: block;
-  width: 15%;
-  height: 80%;
+  width: 0.75em;
+  height: 4em;
   transform-origin: 0 0;
   position: absolute;
-  left: 50%;
+  left: 75%;
+  top: 15%;
   z-index: 1;
-  margin-left: -5px;
   background: linear-gradient(to bottom, #333 0%, #333 15%, #fff 15%, #fff 25%, #333 25%, #333 100%);
   transform: rotate(45deg);
 }
@@ -96,13 +96,13 @@
   display: block;
   transform-origin: 0 0;
   position: absolute;
-  left: 50%;
-  bottom: 10px;
+  left: 15%;
+  bottom: 10%;
   z-index: 1;
   height: 0;
   width: 0;
-  border-right: 7.5px solid transparent;
-  border-left: 7.5px solid transparent;
-  border-top: 15px solid #333;
+  border-right: 0.375em solid transparent;
+  border-left: 0.375em solid transparent;
+  border-top: 0.75em solid #333;
   transform: rotate(45deg);
 }
