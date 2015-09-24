@@ -1,0 +1,10 @@
+.ico_pencil
+  +p-el(after, 15%, 80%)
+    absolute: left 50%
+    margin-left: -5px
+    background: linear-gradient(to bottom, $color 0%, $color 15%, $bgcolor 15%, $bgcolor 25%, $color 25%, $color 100%)
+    transform: rotate(45deg)
+  +p-el(before)
+    absolute: left 50% bottom 10px
+    triangle: 15px 15px, $color, 'down'
+    transform: rotate(45deg)

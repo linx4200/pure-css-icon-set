@@ -5,10 +5,9 @@ p-el($el, $el-width = null, $el-height = null)
     &::{$el}
       content: ''
       display: block
-      if($el-width)
-        width: $el-width
-      if($el-height)
-        height: $el-height
+      width: $el-width if $el-width
+      height: $el-height  if $el-width
+      transform-origin: 0 0
       {block}
   else
     error($el + 'is not a valid pseudo-element.')
@@ -27,6 +26,36 @@ absolute()
 
 relative()
   -pos('relative', arguments)
+
+
+/*
+ * Size utility.
+ *
+ * Synopsis:
+ *
+ *   size: <width> <height> | <width & height>
+ *
+ * Examples:
+ *
+ *     size: 100% 30px
+ *       yields:
+ *         width: 100%
+ *         height: 30px
+ *
+ *     size: 5px
+ *       yields:
+ *         width: 5px
+ *         height: 5px
+ *
+ */
+
+size()
+  if length(arguments) == 1
+    width: arguments[0]
+    height: arguments[0]
+  else
+    width: arguments[0]
+    height: arguments[1]
 
 
 

@@ -1,13 +1,11 @@
 .ico_eye
-  +p-el(before, 60%, 60%)
-    absolute(left 20% top 20%)
+  +p-el(before, 0.6 * $size,  0.6 * $size)
+    absolute(left 0.08 * $size top 0.5 * $size)
     background: $color
     border-top-right-radius: 80%
     border-bottom-left-radius: @border-top-right-radius
     transform: rotate(-45deg)
-  +p-el(after, 20%, 20%)
-    absolute(left 35% top 35%)
-    border: 4px solid $bgcolor
+  +p-el(after, 0.2 * $size,  0.2 * $size)
+    absolute(left 0.31 * $size top 0.31 * $size)
+    border: 0.09 * $size solid $bgcolor
     border-radius: 100%
-    margin-left: -2px
-    margin-top: -2px
