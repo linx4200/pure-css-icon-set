@@ -40,16 +40,16 @@
   display: block;
   transform-origin: 0 0;
   position: absolute;
-  left: 50%;
+  left: 60%;
   top: 50%;
   z-index: 1;
-  margin-left: -7.5px;
-  margin-top: -25px;
+  margin-left: -0.75em;
+  margin-top: -2.5em;
   height: 0;
   width: 0;
-  border-right: 7.5px solid transparent;
-  border-left: 7.5px solid transparent;
-  border-bottom: 30px solid #333;
+  border-right: 0.75em solid transparent;
+  border-left: 0.75em solid transparent;
+  border-bottom: 3em solid #333;
   transform: rotate(25deg);
 }
 .ico_lightening {
@@ -60,16 +60,16 @@
   display: block;
   transform-origin: 0 0;
   position: absolute;
-  left: 50%;
+  left: 60%;
   top: 50%;
   z-index: 1;
-  margin-left: -10px;
-  margin-top: -5px;
+  margin-left: -1em;
+  margin-top: 2.5em;
   height: 0;
   width: 0;
-  border-right: 7.5px solid transparent;
-  border-left: 7.5px solid transparent;
-  border-bottom: 30px solid #333;
+  border-right: 0.75em solid transparent;
+  border-left: 0.75em solid transparent;
+  border-bottom: 3em solid #333;
   transform: rotate(-145deg);
 }
 .ico_pencil {

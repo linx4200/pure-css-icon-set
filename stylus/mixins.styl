@@ -80,7 +80,8 @@ triangle($size, $color, $direction)
 
   if($direction == 'up' || $direction == 'down' || $direction == 'right' || $direction == 'left')
     $width = ($width / 2)
-    $height = length($size) > 1 ? unit($height, 'px') : unit(($height / 2), 'px')
+    // $height = length($size) > 1 ? unit($height, 'px') : unit(($height / 2), 'px')
+    $height = length($size) > 1 ? $height : ($height / 2)
 
     if($direction == 'up')
       // border: null, $width solid $background-color, $height solid $foreground-color
