@@ -22,14 +22,14 @@
 .ico_eye::after {
   content: '';
   display: block;
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   transform-origin: 0 0;
   position: absolute;
-  left: 1.55em;
-  top: 1.55em;
+  left: 1.5em;
+  top: 1.5em;
   z-index: 1;
-  border: 0.45em solid #fff;
+  border: 0.5em solid #fff;
   border-radius: 100%;
 }
 .ico_lightening {
