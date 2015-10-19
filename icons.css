@@ -137,3 +137,7 @@
   z-index: 1;
   border-bottom: 1em #333 solid;
 }
+.ico {
+  width: 5em;
+  height: 5em;
+}
