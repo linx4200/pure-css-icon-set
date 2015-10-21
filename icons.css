@@ -137,6 +137,45 @@
   z-index: 1;
   border-bottom: 1em #333 solid;
 }
+.ico_expand {
+  width: 5em;
+  height: 5em;
+  background: #333;
+  overflow: hidden;
+}
+.ico_expand {
+  position: relative;
+}
+.ico_expand::after {
+  content: '';
+  display: block;
+  width: 4.375em;
+  height: 1.75em;
+  transform-origin: 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transform: translateX(3.75em) translateY(0.625em) rotate(135deg);
+  background: linear-gradient(to right, #fff 0%, #fff 42%, #333 42%, #333 60%, #fff 60%, #fff 100%);
+}
+.ico_expand {
+  position: relative;
+}
+.ico_expand::before {
+  content: '';
+  display: block;
+  width: 4.375em;
+  height: 1.75em;
+  transform-origin: 0 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  transform-origin: 100% 100%;
+  transform: translateX(-3.75em) translateY(-0.625em) rotate(135deg);
+  background: linear-gradient(to right, #fff 0%, #fff 42%, #333 42%, #333 60%, #fff 60%, #fff 100%);
+}
 .ico {
   width: 5em;
   height: 5em;

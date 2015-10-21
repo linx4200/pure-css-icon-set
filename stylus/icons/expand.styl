@@ -1,0 +1,13 @@
+.ico_expand
+  size: $size
+  background: $color
+  overflow: hidden
+  +p-el(after, 0.875*$size, 0.35*$size)
+    absolute: left 0 top 0
+    transform: translateX(0.75*$size) translateY(0.125*$size) rotate(135deg)
+    background: linear-gradient(to right, $bgcolor 0%, $bgcolor 42%, $color 42%, $color 60%, $bgcolor 60%, $bgcolor 100%)
+  +p-el(before, 0.875*$size, 0.35*$size)
+    absolute: right 0 bottom 0
+    transform-origin: 100% 100%
+    transform: translateX(-0.75*$size) translateY(-0.125*$size) rotate(135deg)
+    background: linear-gradient(to right, $bgcolor 0%, $bgcolor 42%, $color 42%, $color 60%, $bgcolor 60%, $bgcolor 100%)
