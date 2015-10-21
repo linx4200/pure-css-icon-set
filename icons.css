@@ -176,6 +176,9 @@
   transform: translateX(-3.75em) translateY(-0.625em) rotate(135deg);
   background: linear-gradient(to right, #fff 0%, #fff 42%, #333 42%, #333 60%, #fff 60%, #fff 100%);
 }
+.ico_cloud {
+  background: radial-gradient(circle at 3.4375em 2.078125em, #333 0%, #333 17%, transparent 18%, transparent 100%), radial-gradient(circle at 2.078125em 2.078125em, #333 0%, #333 30%, transparent 31%, transparent 100%), radial-gradient(circle at 1em 3.125em, #333 0%, #333 17%, transparent 18%, transparent 100%), radial-gradient(circle at 4em 3.125em, #333 0%, #333 17%, transparent 18%, transparent 100%), linear-gradient(90deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%), linear-gradient(transparent 43.75%, #333 43.75%, #333 81.25%, transparent 81.25%);
+}
 .ico {
   width: 5em;
   height: 5em;
