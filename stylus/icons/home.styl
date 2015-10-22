@@ -1,0 +1,12 @@
+.ico_home
+  background:
+    linear-gradient(to top, $bgcolor 0.2*$size, transparent 0.2*$size, transparent 0.5*$size, $bgcolor 0.5*$size),
+    linear-gradient(to right, transparent 0.45*$size, $bgcolor 0.45*$size, $bgcolor 0.55*$size, transparent 0.55*$size),
+    linear-gradient(to right, transparent 0.25*$size, $color 0.25*$size, $color 0.75*$size, transparent 0.75*$size)
+  +p-el(after)
+    absolute: top 0.2*$size left 0.1*$size
+    triangle: 0.8*$size 0.3*$size, $color, up
+  +p-el(before)
+    absolute: top 0.25*$size right 0.25*$size
+    size: 0.1*$size, 0.25*$size
+    background: $color
