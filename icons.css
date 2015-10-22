@@ -298,6 +298,24 @@
   height: 1.25em;
   background: #333;
 }
+.ico_play {
+  position: relative;
+}
+.ico_play::after {
+  content: '';
+  display: block;
+  height: ;
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0.75em;
+  left: 1.25em;
+  z-index: 1;
+  height: 0;
+  width: 0;
+  border-top: 1.75em solid transparent;
+  border-bottom: 1.75em solid transparent;
+  border-left: 3em solid #333;
+}
 .ico {
   width: 5em;
   height: 5em;
