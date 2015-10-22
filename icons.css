@@ -346,6 +346,21 @@
   z-index: 1;
   background: #333;
 }
+.ico_stop {
+  position: relative;
+}
+.ico_stop::before {
+  content: '';
+  display: block;
+  width: 3.5em;
+  height: 3.5em;
+  transform-origin: 0 0;
+  position: absolute;
+  left: 0.75em;
+  top: 0.75em;
+  z-index: 1;
+  background: #333;
+}
 .ico {
   width: 5em;
   height: 5em;
