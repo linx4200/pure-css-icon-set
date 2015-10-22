@@ -38,6 +38,7 @@
 .ico_lightening::before {
   content: '';
   display: block;
+  height: ;
   transform-origin: 0 0;
   position: absolute;
   left: 60%;
@@ -58,6 +59,7 @@
 .ico_lightening::after {
   content: '';
   display: block;
+  height: ;
   transform-origin: 0 0;
   position: absolute;
   left: 60%;
@@ -94,6 +96,7 @@
 .ico_pencil::before {
   content: '';
   display: block;
+  height: ;
   transform-origin: 0 0;
   position: absolute;
   left: 15%;
@@ -178,6 +181,45 @@
 }
 .ico_cloud {
   background: radial-gradient(circle at 3.4375em 2.078125em, #333 0%, #333 17%, transparent 18%, transparent 100%), radial-gradient(circle at 2.078125em 2.078125em, #333 0%, #333 30%, transparent 31%, transparent 100%), radial-gradient(circle at 1em 3.125em, #333 0%, #333 17%, transparent 18%, transparent 100%), radial-gradient(circle at 4em 3.125em, #333 0%, #333 17%, transparent 18%, transparent 100%), linear-gradient(90deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%), linear-gradient(transparent 43.75%, #333 43.75%, #333 81.25%, transparent 81.25%);
+}
+.ico_cloud2 {
+  background: radial-gradient(circle at 3.4375em 2.078125em, #333 0%, #333 17%, transparent 18%, transparent 100%), radial-gradient(circle at 2.078125em 2.078125em, #333 0%, #333 30%, transparent 31%, transparent 100%), radial-gradient(circle at 1em 3.125em, #333 0%, #333 17%, transparent 18%, transparent 100%), radial-gradient(circle at 4em 3.125em, #333 0%, #333 17%, transparent 18%, transparent 100%), linear-gradient(90deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%), linear-gradient(transparent 43.75%, #333 43.75%, #333 81.25%, transparent 81.25%);
+}
+.ico_cloud2 {
+  position: relative;
+}
+.ico_cloud2::before {
+  content: '';
+  display: block;
+  width: 0.625em;
+  height: 0.625em;
+  transform-origin: 0 0;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  z-index: 1;
+  margin-left: -0.3125em;
+  background: #fff;
+}
+.ico_cloud2 {
+  position: relative;
+}
+.ico_cloud2::after {
+  content: '';
+  display: block;
+  height: ;
+  transform-origin: 0 0;
+  height: 0;
+  width: 0;
+  border-right: 0.75em solid transparent;
+  border-left: 0.75em solid transparent;
+  border-bottom: 0.75em solid #fff;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  z-index: 1;
+  margin-top: -0.625em;
+  margin-left: -0.75em;
 }
 .ico {
   width: 5em;

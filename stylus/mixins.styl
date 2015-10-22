@@ -6,7 +6,7 @@ p-el($el, $el-width = null, $el-height = null)
       content: ''
       display: block
       width: $el-width if $el-width
-      height: $el-height  if $el-width
+      height: $el-height ? $el-height : $el-width
       transform-origin: 0 0
       {block}
   else
