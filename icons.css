@@ -316,6 +316,36 @@
   border-bottom: 1.75em solid transparent;
   border-left: 3em solid #333;
 }
+.ico_pause {
+  position: relative;
+}
+.ico_pause::before {
+  content: '';
+  display: block;
+  width: 1.25em;
+  height: 3.5em;
+  transform-origin: 0 0;
+  position: absolute;
+  left: 1em;
+  top: 0.75em;
+  z-index: 1;
+  background: #333;
+}
+.ico_pause {
+  position: relative;
+}
+.ico_pause::after {
+  content: '';
+  display: block;
+  width: 1.25em;
+  height: 3.5em;
+  transform-origin: 0 0;
+  position: absolute;
+  right: 1em;
+  top: 0.75em;
+  z-index: 1;
+  background: #333;
+}
 .ico {
   width: 5em;
   height: 5em;
