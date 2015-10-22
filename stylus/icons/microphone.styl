@@ -1,0 +1,19 @@
+.ico_microphone
+  background:
+    linear-gradient(to right, $bgcolor 0%, $bgcolor 0.35*$size, transparent 0.35*$size, transparent 0.65*$size, $bgcolor 0.65*$size),
+    linear-gradient(to top, $bgcolor 0.1*$size, transparent 0.1*$size, transparent 0.9*$size, $bgcolor 0.9*$size),
+    linear-gradient(to right, transparent 0.465*$size, $color 0.465*$size, $color 0.535*$size, transparent 0.535*$size),
+    linear-gradient(to top, transparent 0.1*$size, $color 0.1*$size, $color 0.16*$size, transparent 0.16*$size)
+  +p-el(after, 0.3*$size, 0.5*$size)
+    absolute: top 0.1*$size left 50%
+    background: $color
+    border-radius: 0.15*$size
+    margin-left: -0.15*$size
+  +p-el(before, 0.5*$size, 0.4*$size)
+    absolute: top 0.3*$size left 50%
+    background: $bgcolor
+    margin-left: -0.25*$size
+    border: 0.05*$size solid $color
+    border-top: none
+    border-bottom-left-radius: 0.25*$size
+    border-bottom-right-radius: @border-bottom-left-radius

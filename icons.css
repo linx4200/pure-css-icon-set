@@ -116,14 +116,14 @@
   content: '';
   display: block;
   width: 5em;
-  height: 3em;
+  height: 2.4em;
   transform-origin: 0 0;
   position: absolute;
-  top: 0;
+  top: 0.5em;
   left: 0;
   z-index: 1;
-  border-top: 1em #333 solid;
-  border-bottom: 1em #333 solid;
+  border-top: 0.8em #333 solid;
+  border-bottom: 0.8em #333 solid;
 }
 .ico_hamburger {
   position: relative;
@@ -132,13 +132,13 @@
   content: '';
   display: block;
   width: 5em;
-  height: 1em;
+  height: 0.8em;
   transform-origin: 0 0;
   position: absolute;
-  bottom: 0;
+  bottom: 0.5em;
   left: 0;
   z-index: 1;
-  border-bottom: 1em #333 solid;
+  border-bottom: 0.8em #333 solid;
 }
 .ico_expand {
   width: 5em;
@@ -220,6 +220,46 @@
   z-index: 1;
   margin-top: -0.625em;
   margin-left: -0.75em;
+}
+.ico_microphone {
+  background: linear-gradient(to right, #fff 0%, #fff 1.75em, transparent 1.75em, transparent 3.25em, #fff 3.25em), linear-gradient(to top, #fff 0.5em, transparent 0.5em, transparent 4.5em, #fff 4.5em), linear-gradient(to right, transparent 2.325em, #333 2.325em, #333 2.675em, transparent 2.675em), linear-gradient(to top, transparent 0.5em, #333 0.5em, #333 0.8em, transparent 0.8em);
+}
+.ico_microphone {
+  position: relative;
+}
+.ico_microphone::after {
+  content: '';
+  display: block;
+  width: 1.5em;
+  height: 2.5em;
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0.5em;
+  left: 50%;
+  z-index: 1;
+  background: #333;
+  border-radius: 0.75em;
+  margin-left: -0.75em;
+}
+.ico_microphone {
+  position: relative;
+}
+.ico_microphone::before {
+  content: '';
+  display: block;
+  width: 2.5em;
+  height: 2em;
+  transform-origin: 0 0;
+  position: absolute;
+  top: 1.5em;
+  left: 50%;
+  z-index: 1;
+  background: #fff;
+  margin-left: -1.25em;
+  border: 0.25em solid #333;
+  border-top: none;
+  border-bottom-left-radius: 1.25em;
+  border-bottom-right-radius: 1.25em;
 }
 .ico {
   width: 5em;
