@@ -533,6 +533,41 @@
   border-left: 1em solid #333;
   transform: translateX(4em) translateY(3em) rotate(45deg);
 }
+.ico_calendar {
+  background: linear-gradient(to bottom, #fff 1.25em, #333 1.25em, #333 2.25em, transparent 2.25em, transparent 4.5em, #333 4.5em), linear-gradient(to right, #333 0.5em, transparent 0.5em, transparent 4.5em, #333 4.5em);
+}
+.ico_calendar {
+  position: relative;
+}
+.ico_calendar::before {
+  content: '';
+  display: block;
+  width: 0.75em;
+  height: 1.25em;
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0.75em;
+  left: 1em;
+  z-index: 1;
+  background: #fff;
+  border: 0.25em solid #333;
+}
+.ico_calendar {
+  position: relative;
+}
+.ico_calendar::after {
+  content: '';
+  display: block;
+  width: 0.75em;
+  height: 1.25em;
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  z-index: 1;
+  background: #fff;
+  border: 0.25em solid #333;
+}
 .ico {
   width: 5em;
   height: 5em;

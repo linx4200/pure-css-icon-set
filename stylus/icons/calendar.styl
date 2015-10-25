@@ -1,0 +1,12 @@
+.ico_calendar
+  background:
+    linear-gradient(to bottom, $bgcolor 0.25*$size, $color 0.25*$size, $color 0.45*$size, transparent 0.45*$size, transparent 0.90*$size, $color 0.90*$size),
+    linear-gradient(to right, $color 0.1*$size, transparent 0.1*$size, transparent 0.9*$size, $color 0.9*$size)
+  +p-el(before, 0.15*$size, 0.25*$size)
+    absolute: top 0.15*$size left 0.2*$size
+    background: $bgcolor
+    border: 0.05*$size solid $color
+  +p-el(after, 0.15*$size, 0.25*$size)
+    absolute: top 0.15*$size right 0.2*$size
+    background: $bgcolor
+    border: 0.05*$size solid $color
