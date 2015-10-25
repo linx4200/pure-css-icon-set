@@ -436,6 +436,38 @@
   border-bottom: 1.75em solid transparent;
   border-left: 1.75em solid #333;
 }
+.ico_check {
+  position: relative;
+}
+.ico_check::after {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 0.5em;
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #333;
+  transform: translateX(1.75em) translateY(3.5em) rotate(-45deg);
+}
+.ico_check {
+  position: relative;
+}
+.ico_check::before {
+  content: '';
+  display: block;
+  width: 1em;
+  height: 0.5em;
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #333;
+  transform: translateX(1.45em) translateY(2.5em) rotate(45deg);
+}
 .ico {
   width: 5em;
   height: 5em;
