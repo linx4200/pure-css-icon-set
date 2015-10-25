@@ -468,6 +468,36 @@
   background: #333;
   transform: translateX(1.45em) translateY(2.5em) rotate(45deg);
 }
+.ico_check2 {
+  border-radius: 100%;
+  border: 0.5em #333 solid;
+}
+.ico_check2 {
+  position: relative;
+}
+.ico_check2::after {
+  content: '';
+  display: block;
+  height: ;
+  transform-origin: 0 0;
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  z-index: 1;
+}
+.ico_check2 {
+  position: relative;
+}
+.ico_check2::before {
+  content: '';
+  display: block;
+  height: ;
+  transform-origin: 0 0;
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  z-index: 1;
+}
 .ico {
   width: 5em;
   height: 5em;
