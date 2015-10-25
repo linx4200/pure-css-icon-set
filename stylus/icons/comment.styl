@@ -1,0 +1,9 @@
+.ico_comment
+  +p-el(before, 0.8*$size, 0.6*$size)
+    absolute: top 0.2*$size left 0.1*$size
+    background: $color
+    border-radius: 65%
+  +p-el(after)
+    absolute: left 0 right 0
+    triangle: 0.2*$size 0.2*$size, $color, right
+    transform: translateX(0.8*$size) translateY(0.6*$size) rotate(45deg)
