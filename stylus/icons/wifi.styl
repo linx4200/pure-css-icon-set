@@ -1,0 +1,8 @@
+.ico_wifi
+  background: radial-gradient(circle at 0.5*$size $size, $color 12%, transparent 12%, transparent 24%, $color 24%, $color 36%, transparent 36%, transparent 48%, $color 48%, $color 60%, transparent 60%)
+  +p-el(before)
+    absolute: left 0 bottom 0
+    triangle: 0.5*$size 0.5*$size, $bgcolor, down-left
+  +p-el(after)
+    absolute: right 0 bottom 0
+    triangle: 0.5*$size 0.5*$size, $bgcolor, down-right

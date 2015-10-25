@@ -568,6 +568,43 @@
   background: #fff;
   border: 0.25em solid #333;
 }
+.ico_wifi {
+  background: radial-gradient(circle at 2.5em 5em, #333 12%, transparent 12%, transparent 24%, #333 24%, #333 36%, transparent 36%, transparent 48%, #333 48%, #333 60%, transparent 60%);
+}
+.ico_wifi {
+  position: relative;
+}
+.ico_wifi::before {
+  content: '';
+  display: block;
+  height: ;
+  transform-origin: 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 0;
+  width: 0;
+  border-bottom: 2.5em solid #fff;
+  border-right: 2.5em solid transparent;
+}
+.ico_wifi {
+  position: relative;
+}
+.ico_wifi::after {
+  content: '';
+  display: block;
+  height: ;
+  transform-origin: 0 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 0;
+  width: 0;
+  border-bottom: 2.5em solid #fff;
+  border-left: 2.5em solid transparent;
+}
 .ico {
   width: 5em;
   height: 5em;
