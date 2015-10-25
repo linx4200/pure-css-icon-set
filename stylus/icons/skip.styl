@@ -1,0 +1,10 @@
+.ico_skip
+  background:
+    linear-gradient(to top, $bgcolor 0.15*$size, transparent 0.15*$size, transparent 0.85*$size, $bgcolor 0.85*$size),
+    linear-gradient(to right, transparent 0.75*$size, $color 0.75*$size, $color 0.85*$size, transparent 0.85*$size)
+  +p-el(before)
+    absolute: left 0.15*$size top 0.15*$size
+    triangle: 0.7*$size, $color, right
+  +p-el(after)
+    absolute: left 0.45*$size top 0.15*$size
+    triangle: 0.7*$size, $color, right
